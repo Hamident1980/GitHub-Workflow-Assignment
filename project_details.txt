@@ -1,3 +1,4 @@
 "This is a placeholder for project details."
 Feature: Added user profile integration module.
 Added user profile integration feature section.
+Note: This feature allows users to manage and view their profile settings.
