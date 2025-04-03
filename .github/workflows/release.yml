@@ -1,0 +1,15 @@
+name: 🚀 Release Workflow
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: ✅ Confirm Release
+        run: echo "🎉 A new release was published! Tag: ${{ github.event.release.tag_name }}"
